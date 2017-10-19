@@ -34,6 +34,16 @@ q:before, q:after {
   content: '';
   content: none; }
 
+/*
+*添加鼠标样式为刘看山的脚掌
+*/
+
+* {
+      cursor: url("https://liukanshan.zhihu.com/images/cursor/pointer.png"),auto!important
+  }
+  :active {
+      cursor: url("https://liukanshan.zhihu.com/images/cursor/pointer-active.png"),auto!important
+  }
 
 
 body {
@@ -1196,7 +1206,9 @@ hr {
   width: 100%;
   max-width: none;
   height: 100%;
-  background: url(../images/background-cover.jpg) top left no-repeat #666666;
+  /*background: url(../images/background-cover.jpg) top left no-repeat #666666;*/
+  /*添加网站背景每天自动更换为当日bing每日图片*/
+  background: url(http://api.dujin.org/bing/1366.php) top left no-repeat #666666;
   background-size: cover; }
 
 .panel-cover--collapsed {
